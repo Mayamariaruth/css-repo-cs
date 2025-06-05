@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss/main.scss dist/style.css",
+    "build": "sass scss/main.scss dist/style.css --no-source-map --style=compressed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.6",
+    "sass": "^1.89.1"
   }
 }
