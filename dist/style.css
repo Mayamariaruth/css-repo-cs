@@ -1,0 +1,13 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
