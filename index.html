@@ -24,7 +24,7 @@
   <body>
     <!-- Header -->
     <header class="py-2 border-bottom border-dark">
-      <nav class="navbar position-relative px-3">
+      <nav class="navbar position-relative px-3" aria-label="Main navigation">
         <a href="index.html" class="navbar-brand logo">Chattr.</a>
 
         <!-- Mobile toggle button -->
@@ -35,16 +35,19 @@
           data-bs-target="#mobile-menu"
           aria-controls="mobile-menu"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle mobile navigation"
         >
-          <i class="fa-solid fa-bars fs-3"></i>
+          <i class="fa-solid fa-bars fs-3" aria-hidden="true"></i>
         </button>
 
         <!-- Desktop navbar -->
         <div class="d-none d-sm-flex me-4">
           <ul class="d-flex gap-5 m-0">
             <li class="nav-item list-unstyled">
-              <a href="index.html" class="nav-link fw-semibold active-link"
+              <a
+                href="index.html"
+                class="nav-link fw-semibold active-link"
+                aria-current="page"
                 >Login</a
               >
             </li>
@@ -64,7 +67,10 @@
       <div class="collapse d-sm-none border-top border-dark" id="mobile-menu">
         <ul class="d-flex gap-5 justify-content-center mb-2 mt-3">
           <li class="nav-item list-unstyled">
-            <a href="index.html" class="nav-link fw-semibold active-link"
+            <a
+              href="index.html"
+              class="nav-link fw-semibold active-link"
+              aria-current="page"
               >Login</a
             >
           </li>
