@@ -107,23 +107,73 @@
       </div>
     </header>
     <!-- Main Content -->
-    <main class="container">
+    <main class="container mb-5">
       <!-- Profile Header -->
-      <div class="d-flex align-items-center gap-3 flex-wrap mb-4 mt-4">
+      <section class="d-flex align-items-center gap-3 flex-wrap mb-5 mt-5">
         <img
           src="/assets/images/profile.jpg"
           alt="User profile image"
           class="profile-img"
         />
         <div class="flex-grow-1 min-w-200">
-          <h1 class="fw-bold mb-2">Maya Thompson</h1>
-          <button type="button" class="btn btn-primary mb-2">Follow</button>
+          <h1 class="fw-bold mb-2">Maya_Thompson</h1>
+          <button type="button" class="btn btn-secondary text-white mb-2">
+            Follow
+          </button>
           <div class="d-flex gap-4 fw-semibold">
             <div><span>128</span> Following</div>
             <div><span>256</span> Followers</div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- User Posts -->
+      <section>
+        <h2 class="mb-3">My Posts</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  Exploring the new features in Bootstrap 5
+                </h3>
+                <p class="card-text">
+                  Just started playing around with Bootstrap 5. The grid system
+                  and utilities are so flexible!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  My favorite recipes
+                </h3>
+                <p class="card-text">
+                  Sharing some of my all-time favorite recipes. Let me know what
+                  you think!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  Morning routines for productivity
+                </h3>
+                <p class="card-text">
+                  How you start your day can change everything. Here’s my
+                  morning routine tips.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Bootstrap JS -->
