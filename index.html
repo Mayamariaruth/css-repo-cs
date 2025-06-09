@@ -116,6 +116,7 @@
         <div class="col-md-6">
           <h2 class="mb-4 text-center">Login to Chattr.</h2>
           <form action="/profile">
+            <!-- Email input -->
             <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
               <input
@@ -127,6 +128,25 @@
                 placeholder="you@example.com"
               />
             </div>
+            <!-- Password input -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                minlength="8"
+                required
+                placeholder="Enter your password"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary text-dark fw-semibold w-100"
+            >
+              Login
+            </button>
           </form>
         </div>
       </div>
