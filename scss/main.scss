@@ -29,12 +29,20 @@ body {
 }
 
 .nav-link {
-  padding: 3px 15px;
+  padding: 7px 15px;
 }
 
 .active-link,
 .nav-link:hover {
   background-color: $primary;
-  border-radius: 3px;
+  border-radius: 6px;
   color: #fff;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d6336c;
 }
