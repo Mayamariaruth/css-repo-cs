@@ -4,6 +4,7 @@
 
 // Brand colors
 $primary: #d6336c; // Deep Rose
+$secondary: #a678d6; // Lavender Purple
 $background: #ffeaea; // Light Pink
 
 // ===============================
@@ -35,4 +36,5 @@ body {
 .nav-link:hover {
   background-color: $primary;
   border-radius: 3px;
+  color: #fff;
 }
