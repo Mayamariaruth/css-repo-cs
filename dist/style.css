@@ -11887,3 +11887,9 @@ body {
   border-radius: 50%;
   border: 3px solid #d6336c;
 }
+
+.post-img {
+  max-width: 130px;
+  height: auto;
+  object-fit: cover;
+}
