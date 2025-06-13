@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --no-source-map --watch scss/main.scss dist/style.css",
-    "build": "sass scss/main.scss dist/style.css --no-source-map --style=compressed"
+    "build": "sass scss/main.scss dist/style.css --no-source-map --style=compressed",
+    "format": "prettier --write '**/*.{html,scss,css,json,md}'"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
   "dependencies": {
     "bootstrap": "^5.3.6",
     "sass": "^1.89.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }
