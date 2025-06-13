@@ -111,8 +111,37 @@
       </div>
     </header>
     <!-- Main Content -->
-    <main class="container">
-      <div></div>
+    <main class="container mb-5">
+      <section
+        class="d-flex align-items-center justify-content-between mb-4 mt-5"
+      >
+        <!-- Search input -->
+        <div class="input-group w-50">
+          <input
+            aria-label="Search posts"
+            type="search"
+            class="form-control border-primary shadow-sm"
+            placeholder="Search posts…"
+          />
+          <button class="btn btn-primary" aria-label="Search">Search</button>
+        </div>
+
+        <!-- Sorting -->
+        <div>
+          <label for="sortSelect" class="form-label me-2 fw-semibold"
+            >Sort by</label
+          >
+          <select
+            id="sortSelect"
+            aria-label="Sort posts"
+            class="form-select d-inline-block w-auto border-primary shadow-sm"
+          >
+            <option>Date</option>
+            <option>Popularity</option>
+            <option>Author</option>
+          </select>
+        </div>
+      </section>
     </main>
 
     <!-- Bootstrap JS -->
