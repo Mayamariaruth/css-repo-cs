@@ -142,6 +142,43 @@
           </select>
         </div>
       </section>
+
+      <!-- New Post form -->
+      <section class="card shadow-sm border-primary p-4 mb-5">
+        <h1 class="mb-3 fs-2">New Post</h1>
+        <form action="#" aria-label="New post form">
+          <div class="mb-2">
+            <input
+              type="text"
+              name="postTitle"
+              aria-label="Post title"
+              placeholder="Post Title"
+              required
+              class="form-control border-dark"
+            />
+          </div>
+          <div class="mb-2">
+            <textarea
+              name="postContent"
+              aria-label="Post content"
+              placeholder="Write your thoughts here..."
+              required
+              rows="4"
+              class="form-control border-dark"
+            ></textarea>
+          </div>
+          <div class="mb-2">
+            <input
+              aria-label="Post thumbnail"
+              type="url"
+              name="postThumbnail"
+              placeholder="Thumbnail URL (optional)"
+              class="form-control border-dark"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mt-2 w-100">Post</button>
+        </form>
+      </section>
     </main>
 
     <!-- Bootstrap JS -->
