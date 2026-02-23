@@ -1,0 +1,64 @@
+// ===============================
+// Custom Bootstrap Variable Overrides
+// ===============================
+
+// Brand colors
+$primary: #d6336c; // Deep Rose
+$secondary: #b76e79; // Rose Gold
+$background: #ffeaea; // Light Pink
+
+// ===============================
+// Import Bootstrap
+// ===============================
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom overrides
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $background;
+}
+
+.logo {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  padding: 7px 15px;
+}
+
+.active-link,
+.nav-link:hover {
+  background-color: $primary;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d6336c;
+}
+
+.post-img {
+  max-width: 130px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 8px 2px rgba(214, 51, 108, 0.4),
+      0 4px 15px 0 rgba(214, 51, 108, 0.2);
+    transform: translateY(-2px);
+  }
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View your Chattr. profile, share your story, and connect with your community on this modern social platform."
+    />
+
+    <meta
+      name="keywords"
+      content="Chattr, social media, connect, share, profile, feed, post, messaging, modern platform, responsive web app, chat app"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/11ca27fbbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <title>Chattr. | Profile</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="py-2 border-bottom border-dark">
+      <nav class="navbar position-relative px-3" aria-label="Main navigation">
+        <a href="../index.html" class="navbar-brand logo">Chattr.</a>
+
+        <!-- Mobile toggle button -->
+        <button
+          class="navbar-toggler d-block border-dark text-dark d-sm-none py-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile-menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Toggle mobile navigation"
+        >
+          <i class="fa-solid fa-bars fs-3" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop navbar -->
+        <div class="d-none d-sm-flex me-4">
+          <ul class="d-flex gap-5 m-0">
+            <li class="nav-item list-unstyled">
+              <a href="../index.html" class="nav-link fw-semibold">Login</a>
+            </li>
+            <li class="nav-item list-unstyled">
+              <a href="../feed/index.html" class="nav-link fw-semibold">Feed</a>
+            </li>
+            <li class="nav-item list-unstyled">
+              <a
+                href="./index.html"
+                class="nav-link fw-semibold active-link"
+                aria-current="page"
+                >Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile navbar -->
+      <div class="collapse d-sm-none border-top border-dark" id="mobile-menu">
+        <ul class="d-flex gap-5 justify-content-center mb-2 mt-3">
+          <li class="nav-item list-unstyled">
+            <a href="../index.html" class="nav-link fw-semibold">Login</a>
+          </li>
+          <li class="nav-item list-unstyled">
+            <a href="../feed/index.html" class="nav-link fw-semibold">Feed</a>
+          </li>
+          <li class="nav-item list-unstyled">
+            <a
+              href="./index.html"
+              class="nav-link fw-semibold active-link"
+              aria-current="page"
+              >Profile</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container mb-5">
+      <!-- Profile Header -->
+      <section class="d-flex align-items-center gap-3 flex-wrap mb-5 mt-5">
+        <img
+          src="../assets/images/profile.jpg"
+          alt="User profile image"
+          class="profile-img"
+        />
+        <div class="flex-grow-1 min-w-200">
+          <h1 class="mb-2 fw-semibold">Maya_Thompson</h1>
+          <button
+            type="button"
+            aria-label="Follow user profile"
+            class="btn btn-secondary text-white mb-2"
+          >
+            Follow
+          </button>
+          <div class="d-flex gap-4 fw-semibold mt-1">
+            <div><span>128</span> Following</div>
+            <div class="vr ms-3 me-3"></div>
+            <div><span>256</span> Followers</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Posts -->
+      <section class="mt-4">
+        <h2 class="mb-3">My Posts</h2>
+        <hr />
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card post-card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  Exploring the new features in Bootstrap 5
+                </h3>
+                <div class="mb-2 text-muted small">
+                  <time datetime="2025-06-13">Jun 13, 2025</time>
+                </div>
+                <p class="card-text">
+                  Just started playing around with Bootstrap 5. The grid system
+                  and utilities are so flexible!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card post-card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  My favorite recipes
+                </h3>
+                <div class="mb-2 text-muted small">
+                  <time datetime="2025-02-05">Feb 5, 2025</time>
+                </div>
+                <p class="card-text">
+                  Sharing some of my all-time favorite recipes. Let me know what
+                  you think!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card post-card h-100 border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary fs-4">
+                  Morning routines for productivity
+                </h3>
+                <div class="mb-2 text-muted small">
+                  <time datetime="2025-01-26">Jan 26, 2025</time>
+                </div>
+                <p class="card-text">
+                  How you start your day can change everything. Here’s my
+                  morning routine tips.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>
